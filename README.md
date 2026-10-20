@@ -1,0 +1,263 @@
+# [Domain Age API](https://apiverve.com/marketplace/domainage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
+
+Domain Age returns when a domain was first registered and how old it is in days, months and years, with a readable age, an age bracket and a newly-registered flag. Paid plans add the expiration date and the last registry update.
+
+The Domain Age API provides a simple, reliable way to integrate domain age functionality into your applications. Built for developers who need production-ready domain age capabilities without the complexity of building from scratch.
+
+**[View API Details →](https://apiverve.com/marketplace/domainage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/domainage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
+[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
+[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
+
+**Available on:**
+[![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/domainage)
+[![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.DomainAge)
+[![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-domainage/)
+[![RubyGems](https://img.shields.io/badge/RubyGems-E9573F?style=flat&logo=rubygems&logoColor=white)](https://rubygems.org/gems/apiverve_domainage)
+[![Packagist](https://img.shields.io/badge/Packagist-F28D1A?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/apiverve/domainage)
+[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://pub.dev/packages/apiverve_domainage)
+[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
+
+---
+
+## Quick Start
+
+### Using JavaScript
+
+```javascript
+async function callDomainAgeAPI() {
+    try {
+        const params = new URLSearchParams({
+            domain: 'myspace.com'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/domainage?${params}`, {
+            method: 'GET',
+            headers: {
+                'x-api-key': 'YOUR_API_KEY_HERE'
+            }
+        });
+
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+
+callDomainAgeAPI();
+```
+
+### Using cURL
+
+```bash
+curl -X GET "https://api.apiverve.com/v1/domainage?domain=myspace.com" \
+  -H "x-api-key: YOUR_API_KEY_HERE"
+```
+
+**Get your API key:** [https://apiverve.com](https://apiverve.com)
+
+**📁 For more examples, see the [examples folder](./examples/)**
+
+---
+
+## Installation
+
+Choose your preferred programming language:
+
+### 📦 NPM (JavaScript/Node.js)
+
+```bash
+npm install @apiverve/domainage
+```
+
+[**View NPM Package →**](https://www.npmjs.com/package/@apiverve/domainage) | [**Package Code →**](./npm/)
+
+---
+
+### 🔷 NuGet (.NET/C#)
+
+```bash
+dotnet add package APIVerve.API.DomainAge
+```
+
+[**View NuGet Package →**](https://www.nuget.org/packages/APIVerve.API.DomainAge) | [**Package Code →**](./nuget/)
+
+---
+
+### 🐍 Python (PyPI)
+
+```bash
+pip install apiverve-domainage
+```
+
+[**View PyPI Package →**](https://pypi.org/project/apiverve-domainage/) | [**Package Code →**](./python/)
+
+---
+
+### 💎 Ruby (RubyGems)
+
+```bash
+gem install apiverve_domainage
+```
+
+[**View RubyGems Package →**](https://rubygems.org/gems/apiverve_domainage) | [**Package Code →**](./ruby/)
+
+---
+
+### 🐘 PHP (Packagist)
+
+```bash
+composer require apiverve/domainage
+```
+
+[**View Packagist Package →**](https://packagist.org/packages/apiverve/domainage) | [**Package Code →**](./php/)
+
+---
+
+### 🎯 Dart (pub.dev)
+
+```bash
+dart pub add apiverve_domainage
+```
+
+[**View pub.dev Package →**](https://pub.dev/packages/apiverve_domainage) | [**Package Code →**](./dart/)
+
+---
+
+### 🤖 Android (JitPack)
+
+```gradle
+implementation 'com.github.apiverve:domainage-api:1.0.0'
+```
+
+[**Package Code →**](./android/)
+
+---
+
+### 🐹 Go
+
+```bash
+go get github.com/apiverve/domainage-api/go
+```
+
+[**Package Code →**](./go/)
+
+---
+
+## Why Use This API?
+
+| Feature | Benefit |
+|---------|---------|
+| **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
+| **Simple Integration** | Single API key authentication, consistent response format |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
+| **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
+
+---
+
+## Documentation
+
+- 🏠 **API Home:** [Domain Age API](https://apiverve.com/marketplace/domainage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
+- 📚 **API Reference:** [docs.apiverve.com/ref/domainage](https://docs.apiverve.com/ref/domainage)
+- 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
+- 💡 **Examples:** [examples/](./examples/)
+
+---
+
+## What Can You Build?
+
+The Domain Age API is commonly used for:
+
+- **Web Applications** - Add domain age features to your frontend or backend
+- **Mobile Apps** - Native SDKs for Android development
+- **Automation** - Integrate with n8n, Zapier, or custom workflows
+- **SaaS Products** - Enhance your product with domain age capabilities
+- **Data Pipelines** - Process and analyze data at scale
+
+---
+
+## API Reference
+
+### Authentication
+All requests require an API key in the header:
+```
+x-api-key: YOUR_API_KEY_HERE
+```
+
+Get your API key: [https://apiverve.com](https://apiverve.com)
+
+### Response Format
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Domain Age API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "domain": "myspace.com",
+    "createdDate": "1996-02-22T05:00:00Z",
+    "domainAgeDays": 11193,
+    "domainAgeMonths": 367,
+    "domainAgeYears": 30.6,
+    "domainAgeText": "30 years, 7 months",
+    "ageCategory": "veteran",
+    "isNewlyRegistered": false,
+    "expirationDate": "2029-02-23T05:00:00Z",
+    "lastUpdatedDate": "2023-01-17T00:16:21Z",
+    "daysSinceLastUpdate": 1367
+  }
+}
+```
+
+---
+
+## Support & Community
+
+- 🏠 **API Home**: [Domain Age API](https://apiverve.com/marketplace/domainage?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
+- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
+- 🐛 **Issues**: [GitHub Issues](../../issues)
+- 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
+- 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
+
+---
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+---
+
+## Security
+
+For security concerns, please review our [Security Policy](SECURITY.md).
+
+---
+
+## License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+Built with ❤️ by [APIVerve](https://apiverve.com)
+
+Copyright © 2026 APIVerve. All rights reserved.
