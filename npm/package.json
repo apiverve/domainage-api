@@ -1,0 +1,47 @@
+{
+  "name": "@apiverve/domainage",
+  "version": "1.2.2",
+  "description": "Domain Age returns when a domain was first registered and how old it is in days, months and years, with a readable age, an age bracket and a newly-registered flag. Paid plans add the expiration date and the last registry update.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "example": "node examples/basic.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apiverve/domainage-api.git",
+    "directory": "npm"
+  },
+  "keywords": [
+    "domain age api", "domain age checker", "check domain age", "domain creation date", "domain registration date"
+  ],
+  "author": {
+    "name": "APIVerve",
+    "email": "hello@apiverve.com",
+    "url": "https://apiverve.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apiverve/domainage-api/issues"
+  },
+  "homepage": "https://apiverve.com/marketplace/domainage?utm_source=npm&utm_medium=referral&utm_content=homepage",
+  "devDependencies": {
+    "mocha": "^11.0.1",
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.7"
+  },
+  "dependencies": {
+    "axios": "1.13.2",
+    "form-data": "^4.0.1"
+  }
+}
