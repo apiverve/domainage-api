@@ -1,0 +1,79 @@
+openapi: 3.0.4
+info:
+  title: Domain Age
+  description: >-
+    Domain Age returns when a domain was first registered and how old it is in
+    days, months and years, with a readable age, an age bracket and a
+    newly-registered flag. Paid plans add the expiration date and the last
+    registry update.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.0
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+  - url: https://api.apiverve.com/
+paths:
+  /v1/domainage:
+    get:
+      summary: Domain Age
+      description: Get the registration date and age of a domain
+      operationId: domainage
+      parameters:
+        - name: domain
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The domain to check the age of
+          example: myspace.com
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: object
+                    description: data
+              example:
+                status: ok
+                error: null
+                data:
+                  domain: myspace.com
+                  createdDate: '1996-02-22T05:00:00Z'
+                  domainAgeDays: 11193
+                  domainAgeMonths: 367
+                  domainAgeYears: 30.6
+                  domainAgeText: 30 years, 7 months
+                  ageCategory: veteran
+                  isNewlyRegistered: false
+                  expirationDate: '2029-02-23T05:00:00Z'
+                  lastUpdatedDate: '2023-01-17T00:16:21Z'
+                  daysSinceLastUpdate: 1367
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occurred, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+  - api_key: []
