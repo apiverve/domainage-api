@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/domainage",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Domain Age returns when a domain was first registered and how old it is in days, months and years, with a readable age, an age bracket and a newly-registered flag. Paid plans add the expiration date and the last registry update.",
   "main": "index.js",
   "types": "index.d.ts",
